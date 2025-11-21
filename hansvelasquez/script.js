@@ -106,4 +106,10 @@ console.log(nuevaFila);
 let filas = ["Ana", "Luis", "Carlos", "Maria"];
 let nuevaFilaConJorge = [...filas.slice(0,2), "Jorge", ...filas.slice(2)];
 console.log(filas);
-console.log(nuevaFilaConJorge);   
+console.log(nuevaFilaConJorge);
+
+//Ejercicio 17: Reemplazar sin Mutar (map)
+let tablero = ["X", "O", "X"];
+let nuevoTablero = tablero.map((valor, indice) => indice === 1 ? "X" : valor);
+console.log(tablero);
+console.log(nuevoTablero);
