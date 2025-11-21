@@ -31,3 +31,10 @@ console.log("Total de ventas es: "+ totalVentas);
 let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
 let listaPlana = grupos.reduce((acum,grupos)=> acum.concat(grupos), []);
 console.log(listaPlana);
+
+//Ejercicio 7: Crear una Copia (slice)
+let original = ["A", "B", "C"];
+let copia = original.slice(0,2);
+copia.push("D");
+console.log(original);
+console.log(copia);
