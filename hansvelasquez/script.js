@@ -5,7 +5,11 @@ console.log(puntos);
 console.log(puntosDuplicados);
 
 //Ejercicio 2: Lista de Nombres (map con objetos)
-let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
+let usuarios = [
+  { id: 1, nombre: "Ana" },
+  { id: 2, nombre: "Luis" },
+  { id: 3, nombre: "Carlos" },
+];
 let nombres = usuarios.map((usuario) => usuario.nombre);
 console.log(nombres);
 
@@ -16,25 +20,29 @@ console.log(notas);
 console.log(aprobadas);
 
 //Ejercicio 4: Productos en Stock (filter con objetos)
-let productos = [{nombre: "Camisa", stock: 10}, {nombre: "Zapatos", stock: 0}, {nombre: "Pantalón", stock: 5}];
-let enStock = productos.filter((productos)=>productos.stock > 0);
+let productos = [
+  { nombre: "Camisa", stock: 10 },
+  { nombre: "Zapatos", stock: 0 },
+  { nombre: "Pantalón", stock: 5 },
+];
+let enStock = productos.filter((productos) => productos.stock > 0);
 console.log(productos);
-console.log(enStock); 
+console.log(enStock);
 
 //Ejercicio 5: Suma Total de Ventas (reduce)
 let ventas = [150, 300, 100, 50];
 let totalVentas = ventas.reduce((acum, venta) => acum + venta, 0);
 console.log(ventas);
-console.log("Total de ventas es: "+ totalVentas);
+console.log("Total de ventas es: " + totalVentas);
 
 //Ejercicio 6: Aplanar un Arreglo (reduce)
 let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
-let listaPlana = grupos.reduce((acum,grupos)=> acum.concat(grupos), []);
+let listaPlana = grupos.reduce((acum, grupos) => acum.concat(grupos), []);
 console.log(listaPlana);
 
 //Ejercicio 7: Crear una Copia (slice)
 let original = ["A", "B", "C"];
-let copia = original.slice(0,2);
+let copia = original.slice(0, 2);
 copia.push("D");
 console.log(original);
 console.log(copia);
@@ -62,6 +70,16 @@ console.log(nuevoCarrito);
 
 //Ejercicio 11: Verificar Permiso (includes)
 let roles = ["USER", "EDITOR"];
-let tieneRol= roles.includes("ADMIN" && "EDITOR");
+let tieneRol = roles.includes("ADMIN" && "EDITOR");
 console.log("Tiene rol ADMIN: " + tieneRol);
 console.log("Tiene rol EDITOR: " + tieneRol);
+
+//Ejercicio 12: Encontrar Usuario (find)
+let usuario = [
+  { id: 101, nombre: "Ana" },
+  { id: 102, nombre: "Luis" },
+  { id: 103, nombre: "Carlos" },
+]; //Tuve que modificar el nombre del arreglo pues en el ejercicio 2 ya estaba declarado y no me permitia volver a declarar
+let usuarioEncontrado = usuario.find((usuario) => usuario.id === 102);
+console.log(usuario);
+console.log(usuarioEncontrado);
