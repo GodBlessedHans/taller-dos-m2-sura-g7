@@ -83,3 +83,9 @@ let usuario = [
 let usuarioEncontrado = usuario.find((usuario) => usuario.id === 102);
 console.log(usuario);
 console.log(usuarioEncontrado);
+
+//Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+let invitadosOrdenados = invitados.slice().sort();
+console.log(invitados);
+console.log(invitadosOrdenados);
