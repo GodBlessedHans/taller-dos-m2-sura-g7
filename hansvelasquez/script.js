@@ -113,3 +113,9 @@ let tablero = ["X", "O", "X"];
 let nuevoTablero = tablero.map((valor, indice) => indice === 1 ? "X" : valor);
 console.log(tablero);
 console.log(nuevoTablero);
+
+//Ejercicio 18: Combo (filter y map)
+let products = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];
+let productosBaratos = products.filter((producto) => producto.precio < 5).map((producto) => producto.nombre);
+console.log(products);
+console.log(productosBaratos);
