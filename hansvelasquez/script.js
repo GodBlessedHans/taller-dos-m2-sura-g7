@@ -59,3 +59,9 @@ let carrito = ["Manzana"];
 let nuevoCarrito = carrito.concat("Pera");
 console.log(carrito);
 console.log(nuevoCarrito);
+
+//Ejercicio 11: Verificar Permiso (includes)
+let roles = ["USER", "EDITOR"];
+let tieneRol= roles.includes("ADMIN" && "EDITOR");
+console.log("Tiene rol ADMIN: " + tieneRol);
+console.log("Tiene rol EDITOR: " + tieneRol);
